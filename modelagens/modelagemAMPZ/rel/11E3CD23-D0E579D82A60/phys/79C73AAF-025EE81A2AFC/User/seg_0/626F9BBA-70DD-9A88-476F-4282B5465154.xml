@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="RM99409" directorySegmentName="seg_0" id="626F9BBA-70DD-9A88-476F-4282B5465154">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>RM99409</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:00 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+</UserOraclev10g>

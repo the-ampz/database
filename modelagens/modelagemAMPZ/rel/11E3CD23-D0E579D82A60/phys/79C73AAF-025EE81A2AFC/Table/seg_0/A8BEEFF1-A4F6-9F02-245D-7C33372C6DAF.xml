@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="T_AUDIT_GXP_ENERGY_CONSUMPTION" directorySegmentName="seg_0" id="A8BEEFF1-A4F6-9F02-245D-7C33372C6DAF">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:02 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D78C7D69-14BD-7993-D0EC-EF9D42528521</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OLD_ENERGY_SAVED" id="0CD8E665-4F85-3657-F953-559261CA7399">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPERATION_DATE" id="1410FF72-0152-1ED1-88E3-7AB4250FAC3E">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEW_ENERGY_SAVED" id="371DDFDC-A868-B06E-A6F9-05468B375F53">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEW_CONSUMPTION_TYPE" id="48510552-57AC-505A-8E03-0F94671B9417">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENERGY_CONSUMPTION" id="4EA60C11-7BD5-5561-9A98-F8E7B133A5B5">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPERATION" id="8B0CC542-BB9A-F22E-B2D5-E0B3C86A2E5A">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OLD_CONSUMPTION_TYPE" id="AC20A552-225E-81C3-F531-133324C3FA8D">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DEVICE" id="D93F6DF0-9E3D-CC69-9819-FAA4D88D2F26">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUDIT_ID" id="FE856073-2E24-E9AD-ED86-2EF06ABA4EEF">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIT_ENERGY_CONSUMPTION" id="3AE31FCC-D2CA-F393-8877-4301771E4D10">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIT_ENERGY_CONSUMPTION_DEVICE" id="78EC6740-E537-DBDB-97ED-AE06DB34590C">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="T_AUDIT_GXP_ENERGY_CONSUMPTION_PK" id="FC033D35-6DF7-2EA8-BA9D-927B5768B3BC">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:19 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<segment>DBD03DEF-48FB-D394-69EF-1BC6E1BAA37C</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<indexSegment>DBD03DEF-48FB-D394-69EF-1BC6E1BAA37C</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

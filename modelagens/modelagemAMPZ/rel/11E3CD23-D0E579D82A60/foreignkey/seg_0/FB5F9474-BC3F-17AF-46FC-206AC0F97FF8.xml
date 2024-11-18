@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB5F9474-BC3F-17AF-46FC-206AC0F97FF8" containerWithKeyObject="7CC7459A-C339-0E5B-D04A-37A863A86344" localFKIndex="834AD338-005E-AAE5-C24C-AB4571A7E934" name="FK_USER_ADDRESS">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>FK_USER_ADDRESS</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<referredTableLongName>RM99409.T_GXP_ADDRESS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>024CC514-ED77-D7C2-07A6-7A22714BF6CA</referredTableID>
+<keyObject>82DB04F3-DA37-3D6F-E373-857976D3AE7E</keyObject>
+<referredKeyID>82DB04F3-DA37-3D6F-E373-857976D3AE7E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_ADDRESS</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

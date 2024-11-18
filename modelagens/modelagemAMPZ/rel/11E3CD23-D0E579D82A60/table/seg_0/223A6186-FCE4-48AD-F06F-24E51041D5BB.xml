@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="223A6186-FCE4-48AD-F06F-24E51041D5BB" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_GXP_SCORE">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>T_GXP_SCORE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:02 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SCORE" id="E61E8EF7-D9BF-70FB-1BCE-C8B3F4F03BB1">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_SCORE</sourceObjSchema>
+<sourceObjName>ID_SCORE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:05 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_KID" id="7854E8F7-3580-0CAA-76F9-FAA38AF49DBE">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_SCORE</sourceObjSchema>
+<sourceObjName>ID_KID</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21DBF4FB-9687-81CB-027D-3B13E212996B" referredColumn="AACE1A8F-8AEC-C063-60DC-493A5A49E302"/>
+</associations>
+</Column>
+<Column name="ID_CHALLENGE" id="26D19518-153C-E5EF-4DF9-65F7FAB0104A">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_SCORE</sourceObjSchema>
+<sourceObjName>ID_CHALLENGE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BA2294C-A675-77E5-187B-A0F58369F937" referredColumn="7FEF25EA-9012-E507-1C1E-D5DB063299B0"/>
+</associations>
+</Column>
+<Column name="VL_POINTS" id="1E9F380D-A07A-811C-6760-E1F9407FA267">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_SCORE</sourceObjSchema>
+<sourceObjName>VL_POINTS</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_COMPLETION" id="D6ED0EDB-E155-573B-A6F5-5E0FA673A526">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_SCORE</sourceObjSchema>
+<sourceObjName>DT_COMPLETION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="848BD2E2-A5DB-1BBF-C4ED-1917EB9AAFB8" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_GXP_SCORE_PK">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>SYS_C004082718</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:07 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E61E8EF7-D9BF-70FB-1BCE-C8B3F4F03BB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="683436D2-7F47-D6A2-848E-8B26934F2F34" name="FK_SCORE_CHALLENGE">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26D19518-153C-E5EF-4DF9-65F7FAB0104A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28AA1B47-D38B-6E1E-EA62-938AAAA9D89A" name="FK_SCORE_KID">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7854E8F7-3580-0CAA-76F9-FAA38AF49DBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

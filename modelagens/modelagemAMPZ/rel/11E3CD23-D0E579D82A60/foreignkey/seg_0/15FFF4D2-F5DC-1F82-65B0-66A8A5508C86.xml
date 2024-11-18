@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="15FFF4D2-F5DC-1F82-65B0-66A8A5508C86" containerWithKeyObject="EFCBAFA2-29DD-FA70-0440-F000508B7818" localFKIndex="C88DAF16-5492-E43E-A7EB-B94615486A0D" name="FK_ENERGY_CONSUMPTION_DEVICE">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>FK_ENERGY_CONSUMPTION_DEVICE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<referredTableLongName>RM99409.T_GXP_DEVICE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>74238A99-8992-DE0A-BAE5-58B8E980C258</referredTableID>
+<keyObject>161AA462-5ADD-D004-336F-E78739C09358</keyObject>
+<referredKeyID>161AA462-5ADD-D004-336F-E78739C09358</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_DEVICE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

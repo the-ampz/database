@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AUDIT_ENERGY_CONSUMPTION" directorySegmentName="seg_0" id="B6546BC9-25BB-44EA-2C2A-E0BAAC78EEC7">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>FAE21CD1-6D0C-6042-A831-5AD7CC9386BF</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<sourcePk>5FE18848-2225-C2EB-A5EB-65DE9B183655</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>886FD986-3C74-B494-66DC-BA091B148220</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1D13FB76-2318-A8A4-063E-084D647BC392</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

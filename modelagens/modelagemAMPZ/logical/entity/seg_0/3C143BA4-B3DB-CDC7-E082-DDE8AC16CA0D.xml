@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C143BA4-B3DB-CDC7-E082-DDE8AC16CA0D" name="T AUDIT GXP SCORE">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>C41442B4-F313-5727-39AE-430DFC4F3B4D</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AUDIT ID" id="EE0BED8B-F919-2898-8D90-3C9D04CF532A">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>66B04184-C498-1E66-3DE2-35A263EB691C</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID SCORE" id="DB6A67D1-87EB-7E53-6BAA-81A306F48D99">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>73BA4058-BFD7-1798-E6F5-A9A8B675AC0E</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7A52B02C-7A84-D46F-4073-66F1DD3A601B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID KID" id="4854E96E-EB19-D19E-ED12-D0A6131BDD6F">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>11B22254-7C6F-29DF-65B1-A886886615F2</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FB2DC733-118D-0574-DC40-2F7CE910859B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CHALLENGE" id="2298B122-2BF5-5F14-EB78-131973F87B55">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>F4EEF534-9244-73DD-0034-6B45E8B05FED</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DCDDEF44-E551-59DE-FCB2-D97EA0209B2E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPERATION" id="E48631BD-F06B-5C85-328C-1BEB4DADB03F">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>ED1E503F-77CD-11A7-7468-F03C8FD8C9A1</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPERATION DATE" id="7E4C1319-1388-481F-0C89-F4E040257533">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>BB0BC563-EBE5-5151-5283-D8E4E44E4F08</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OLD POINTS" id="9436823C-FA03-59BC-6D92-9C2C6C3B5376">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>325DE13B-E715-51C9-BC84-2B1682BCE6C0</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NEW POINTS" id="BAB48CD0-E3A2-D2C9-D7FA-9DB9D0CA0104">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>673D8942-7965-8CEB-6F22-FF035E349239</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="76A74158-72C6-4C50-9E80-5E7466884715" name="T AUDIT GXP SCORE PK">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>5C8181BC-95B1-213D-D742-34EFB2091688</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE0BED8B-F919-2898-8D90-3C9D04CF532A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

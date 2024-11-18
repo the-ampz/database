@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CC7459A-C339-0E5B-D04A-37A863A86344" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_GXP_USER">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>T_GXP_USER</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:02 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USER" id="B93F1FF2-33A3-4779-35A0-98B1D6ECD74A">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_USER</sourceObjSchema>
+<sourceObjName>ID_USER</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_NAME" id="C47320EC-9FAC-D260-2F6A-9D38D53DCF81">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_USER</sourceObjSchema>
+<sourceObjName>DS_NAME</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_EMAIL" id="77F2A366-E2BE-23D1-39C8-35D4AA66EA8B">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_USER</sourceObjSchema>
+<sourceObjName>DS_EMAIL</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_PASSWORD" id="15DE36A6-59EF-4A86-6927-9CF36D5905BF">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_USER</sourceObjSchema>
+<sourceObjName>DS_PASSWORD</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ADDRESS" id="78CCCB2C-3E2B-42E2-F590-B2A2500EFDF3">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_USER</sourceObjSchema>
+<sourceObjName>ID_ADDRESS</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB5F9474-BC3F-17AF-46FC-206AC0F97FF8" referredColumn="C8A23EE9-70B5-F9D5-66DF-67D513FFB470"/>
+</associations>
+</Column>
+<Column name="DT_BIRTHDATE" id="F845210A-0B99-301A-2CF3-BB0429FC781F">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_GXP_USER</sourceObjSchema>
+<sourceObjName>DT_BIRTHDATE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:06 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D6351E8-5449-A95B-478A-E178CF6E60BF" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_GXP_USER_PK">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>SYS_C004082703</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:07 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B93F1FF2-33A3-4779-35A0-98B1D6ECD74A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEAC3E7B-B302-F82A-C74B-42D886C43299" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_GXP_USER_DS_EMAIL_UN">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>SYS_C004082704</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:07 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F2A366-E2BE-23D1-39C8-35D4AA66EA8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="834AD338-005E-AAE5-C24C-AB4571A7E934" name="FK_USER_ADDRESS">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78CCCB2C-3E2B-42E2-F590-B2A2500EFDF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="748713B9-EF74-AF92-0BA3-A89C3E17EFA2" containerWithKeyObject="26934AF9-D5F7-C5EF-F1D8-BD5B6F110867" localFKIndex="BE1DFCE8-646C-3CB9-4C81-6F9ED60266E8" name="FK_AUDIT_PARTICIPATION_COMMUNITY">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>FK_AUDIT_PARTICIPATION_COMMUNITY</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<referredTableLongName>RM99409.T_GXP_COMMUNITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4AF39F7A-1691-9311-4A55-FAA76B1FCCA3</referredTableID>
+<keyObject>122FD027-97A3-A63E-CBCA-80CCEBBB18D9</keyObject>
+<referredKeyID>122FD027-97A3-A63E-CBCA-80CCEBBB18D9</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_COMMUNITY</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

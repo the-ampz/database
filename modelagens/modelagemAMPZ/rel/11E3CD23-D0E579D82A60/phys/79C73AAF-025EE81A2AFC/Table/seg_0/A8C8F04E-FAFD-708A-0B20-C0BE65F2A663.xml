@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="T_AUDIT_GXP_CHALLENGE_GOAL" directorySegmentName="seg_0" id="A8C8F04E-FAFD-708A-0B20-C0BE65F2A663">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:01 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D78C7D69-14BD-7993-D0EC-EF9D42528521</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AUDIT_ID" id="2F26FEF1-2FC5-9A5C-4BC8-9241F0AF7EE4">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPERATION_DATE" id="39E527A6-6E7A-2DB2-49DF-CC192C29A3C9">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_COMMUNITY" id="4FE3CBF4-1BE1-2144-E3A0-320754FE7AAD">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OLD_SCORE" id="5C203F64-CE24-64B6-8D0A-F50B017BB08D">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPERATION" id="70C78282-DA41-A01F-526F-BEC294FAFC0B">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OLD_DESCRIPTION" id="B1A09638-C856-B45A-B908-E652FF8A2B37">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEW_SCORE" id="F5EA432F-93B4-D984-7E34-EDEC818C2F82">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CHALLENGE" id="FABC08FB-7F29-F741-A30C-2ED63328BEF0">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEW_DESCRIPTION" id="FFE905F5-2578-6DE8-9777-7E4299247445">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:04 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIT_CHALLENGE" id="2D25609B-99A3-29B9-486D-E059D04F5F3B">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIT_CHALLENGE_COMMUNITY" id="537E7A02-8BAA-51EF-96DE-0C4F87991825">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0002421721C00006$$" id="E8A7F42A-0FE5-1E04-84D9-FA2625A218A9">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>OLD_DESCRIPTION</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0002421721C00008$$" id="01EBD3CD-4BA5-DCC3-E171-D725C937D6F4">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:23 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>NEW_DESCRIPTION</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="T_AUDIT_GXP_CHALLENGE_GOAL_PK" id="F75B56A6-E6A1-B440-6AE4-25FF7BCE76CD">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:13 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<segment>DBD03DEF-48FB-D394-69EF-1BC6E1BAA37C</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<indexSegment>DBD03DEF-48FB-D394-69EF-1BC6E1BAA37C</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

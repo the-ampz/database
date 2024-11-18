@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_AUDIT_DEVICE" directorySegmentName="seg_0" id="DC7457F7-0731-DA6F-5A6D-93F442ECF734">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>TRG_AUDIT_DEVICE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:21 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[BEGIN
+    IF INSERTING THEN
+        INSERT INTO t_audit_gxp_device (audit_id, id_device, operation, operation_date, new_name, new_energy_consumption)
+        VALUES (seq_t_audit_gxp_device.NEXTVAL, :NEW.id_device, 'INSERT', SYSTIMESTAMP, :NEW.ds_name, :NEW.vl_energy_consumption);
+    ELSIF UPDATING THEN
+        INSERT INTO t_audit_gxp_device (audit_id, id_device, operation, operation_date, old_name, old_energy_consumption, new_name, new_energy_consumption)
+        VALUES (seq_t_audit_gxp_device.NEXTVAL, :OLD.id_device, 'UPDATE', SYSTIMESTAMP, :OLD.ds_name, :OLD.vl_energy_consumption, :NEW.ds_name, :NEW.vl_energy_consumption);
+    ELSIF DELETING THEN
+        INSERT INTO t_audit_gxp_device (audit_id, id_device, operation, operation_date, old_name, old_energy_consumption)
+        VALUES (seq_t_audit_gxp_device.NEXTVAL, :OLD.id_device, 'DELETE', SYSTIMESTAMP, :OLD.ds_name, :OLD.vl_energy_consumption);
+    END IF;
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
+<table>74238A99-8992-DE0A-BAE5-58B8E980C258</table>
+</TriggerOraclev10g>

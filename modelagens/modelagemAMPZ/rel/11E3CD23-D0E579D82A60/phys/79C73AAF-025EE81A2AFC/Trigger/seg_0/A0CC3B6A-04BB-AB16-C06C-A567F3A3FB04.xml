@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_AUDIT_COMMUNITY_PARTICIPATION" directorySegmentName="seg_0" id="A0CC3B6A-04BB-AB16-C06C-A567F3A3FB04">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>TRG_AUDIT_COMMUNITY_PARTICIPATION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:21 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[BEGIN
+    IF INSERTING THEN
+        INSERT INTO t_audit_gxp_community_participation (audit_id, id_participation, id_kid, id_community, operation, operation_date, new_points)
+        VALUES (seq_t_audit_gxp_community_participation.NEXTVAL, :NEW.id_participation, :NEW.id_kid, :NEW.id_community, 'INSERT', SYSTIMESTAMP, :NEW.points);
+    ELSIF UPDATING THEN
+        INSERT INTO t_audit_gxp_community_participation (audit_id, id_participation, id_kid, id_community, operation, operation_date, old_points, new_points)
+        VALUES (seq_t_audit_gxp_community_participation.NEXTVAL, :OLD.id_participation, :OLD.id_kid, :OLD.id_community, 'UPDATE', SYSTIMESTAMP, :OLD.points, :NEW.points);
+    ELSIF DELETING THEN
+        INSERT INTO t_audit_gxp_community_participation (audit_id, id_participation, id_kid, id_community, operation, operation_date, old_points)
+        VALUES (seq_t_audit_gxp_community_participation.NEXTVAL, :OLD.id_participation, :OLD.id_kid, :OLD.id_community, 'DELETE', SYSTIMESTAMP, :OLD.points);
+    END IF;
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
+<table>AC8AC937-3EF8-9A87-C2A7-5FD8279D7647</table>
+</TriggerOraclev10g>

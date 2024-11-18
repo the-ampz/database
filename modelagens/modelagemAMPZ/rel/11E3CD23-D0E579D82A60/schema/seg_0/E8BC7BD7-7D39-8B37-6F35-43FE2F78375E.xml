@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="RM99409" directorySegmentName="seg_0" id="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:01 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</SchemaObject>

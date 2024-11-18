@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelagemAMPZ" id="C54240C8-9F32-452C-4C77-6D8F7E476E8F" version="3.5">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:12:57 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C54240C8-9F32-452C-4C77-6D8F7E476E8F</designId>
+</OSDM_Design>

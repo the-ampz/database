@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_AUDIT_CHALLENGE_GOAL" directorySegmentName="seg_0" id="6CD7940B-37C1-B1AD-2ED0-486DB318A659">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>TRG_AUDIT_CHALLENGE_GOAL</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:21 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[BEGIN
+    IF INSERTING THEN
+        INSERT INTO t_audit_gxp_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, new_description, new_score)
+        VALUES (seq_t_audit_gxp_challenge_goal.NEXTVAL, :NEW.id_challenge, :NEW.id_community, 'INSERT', SYSTIMESTAMP, :NEW.ds_description, :NEW.vl_score);
+    ELSIF UPDATING THEN
+        INSERT INTO t_audit_gxp_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, old_description, old_score, new_description, new_score)
+        VALUES (seq_t_audit_gxp_challenge_goal.NEXTVAL, :OLD.id_challenge, :OLD.id_community, 'UPDATE', SYSTIMESTAMP, :OLD.ds_description, :OLD.vl_score, :NEW.ds_description, :NEW.vl_score);
+    ELSIF DELETING THEN
+        INSERT INTO t_audit_gxp_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, old_description, old_score)
+        VALUES (seq_t_audit_gxp_challenge_goal.NEXTVAL, :OLD.id_challenge, :OLD.id_community, 'DELETE', SYSTIMESTAMP, :OLD.ds_description, :OLD.vl_score);
+    END IF;
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
+<table>D5672D9E-E084-C2AA-2F35-8406250D8F1F</table>
+</TriggerOraclev10g>

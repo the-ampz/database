@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PARTICIPATION_KID" directorySegmentName="seg_0" id="AAECBDF9-6799-8C71-7FD7-8E7426A85C48">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:27:39 UTC</createdTime>
+<generatorID>5E646022-D66C-60D3-67F5-95AF6DCD8F3B</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<sourcePk>731E1EBE-312A-7748-DF88-EEF7B54C8BFC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>122E1A27-E842-FDA6-B2A3-58B1D9AB0175</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>836923DD-D04E-B474-F3B6-4EECC2D5550C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

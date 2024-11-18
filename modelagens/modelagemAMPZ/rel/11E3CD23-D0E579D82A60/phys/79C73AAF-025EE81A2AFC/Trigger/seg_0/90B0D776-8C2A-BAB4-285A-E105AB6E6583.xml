@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_AUDIT_KID" directorySegmentName="seg_0" id="90B0D776-8C2A-BAB4-285A-E105AB6E6583">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>TRG_AUDIT_KID</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-17 01:17:21 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[BEGIN
+    IF INSERTING THEN
+        INSERT INTO t_audit_gxp_kid (audit_id, id_kid, operation, operation_date, new_name, new_total_score)
+        VALUES (seq_t_audit_gxp_kid.NEXTVAL, :NEW.id_kid, 'INSERT', SYSTIMESTAMP, :NEW.ds_name, :NEW.total_score);
+    ELSIF UPDATING THEN
+        INSERT INTO t_audit_gxp_kid (audit_id, id_kid, operation, operation_date, old_name, old_total_score, new_name, new_total_score)
+        VALUES (seq_t_audit_gxp_kid.NEXTVAL, :OLD.id_kid, 'UPDATE', SYSTIMESTAMP, :OLD.ds_name, :OLD.total_score, :NEW.ds_name, :NEW.total_score);
+    ELSIF DELETING THEN
+        INSERT INTO t_audit_gxp_kid (audit_id, id_kid, operation, operation_date, old_name, old_total_score)
+        VALUES (seq_t_audit_gxp_kid.NEXTVAL, :OLD.id_kid, 'DELETE', SYSTIMESTAMP, :OLD.ds_name, :OLD.total_score);
+    END IF;
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
+<table>80CEBB90-590C-1373-705D-713CFA989951</table>
+</TriggerOraclev10g>
