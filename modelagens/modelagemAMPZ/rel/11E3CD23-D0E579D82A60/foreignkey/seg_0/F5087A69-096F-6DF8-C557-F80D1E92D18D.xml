@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5087A69-096F-6DF8-C557-F80D1E92D18D" containerWithKeyObject="9263E935-8655-7736-C38B-54625B56D06D" localFKIndex="2E72BC75-1943-0072-AB6C-75E6389EB251" name="FK_AUDIT_CHALLENGEv1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>ACDF25E7-5395-8750-9AC8-FFB796494505</importedID>
+<referredTableLongName>RM99409.T_AMPZ_CHALLENGE_GOAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>625F844C-5F0D-AC40-2BE4-DC93B234491A</referredTableID>
+<keyObject>6A9A75D3-EDD8-3561-AC30-D3ACE346D26E</keyObject>
+<referredKeyID>6A9A75D3-EDD8-3561-AC30-D3ACE346D26E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_CHALLENGE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

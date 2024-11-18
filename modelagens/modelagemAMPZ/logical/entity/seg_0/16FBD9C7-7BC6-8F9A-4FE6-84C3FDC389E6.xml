@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="16FBD9C7-7BC6-8F9A-4FE6-84C3FDC389E6" name="T AUDIT AMPZ COMMUNITY">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>7C45ED06-15AF-4453-7F96-3ED456A7C78A</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AUDIT ID" id="CF525F70-7222-714A-3DE8-EBCE301736F3">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>5A950045-4606-614F-0238-B0CA682D58E0</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID COMMUNITY" id="43379FB4-B943-E98B-9333-726711D9F339">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>76D2EE23-FAF0-0B07-238B-1AEDB7FA046C</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C5BE0FCB-6C95-5EEB-930D-2845E7BD8BF8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPERATION" id="520FE1E4-2686-5A6E-2FBD-F6D417172630">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>820DFFCE-EC3B-0F3D-9047-2D6ED5047287</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPERATION DATE" id="BA92502C-7E62-21FF-E76A-2D36B4245F45">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>D3C497AE-E15E-30F7-86D9-BCF5FDFCE456</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OLD NAME" id="B8FEF42A-B342-3B55-355F-E68B4961531B">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>7F33AAAA-96C0-FAD0-CFE0-41968281ABEC</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OLD TOTAL POINTS" id="95634507-3CFA-90B2-00DA-36A32DBABC7E">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>555ADE2C-DFAD-F51A-09AD-55E1EC175054</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NEW NAME" id="24EA963C-E0E3-1960-D104-693FB58836B9">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>1A5F71CB-4018-C6E1-97B8-57907A76A453</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NEW TOTAL POINTS" id="F7262B4E-DE11-0CD0-E74A-069731DE1848">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>85E2E468-D45A-DEAA-BA3B-61D72A875EDF</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB95D03A-387D-55B8-1046-EDB354E6812F" name="T AUDIT AMPZ COMMUNITY PK">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>D3B4C838-A7B1-F93B-CC86-AF45C4738A8C</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CF525F70-7222-714A-3DE8-EBCE301736F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

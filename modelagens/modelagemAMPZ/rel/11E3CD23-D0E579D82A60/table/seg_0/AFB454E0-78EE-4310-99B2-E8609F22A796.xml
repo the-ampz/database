@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFB454E0-78EE-4310-99B2-E8609F22A796" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_AMPZ_ADDRESS">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>T_AMPZ_ADDRESS</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>98B743F2-A0A6-25D7-ED49-882AD85C4FF3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ADDRESS" id="B1BB3AD9-C1E6-4E8C-DE0A-985660DDC52A">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>ID_ADDRESS</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>23AAADFD-27BF-FB92-32A7-03910CA20A71</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_STREET" id="CF91188E-4C03-83C9-16DB-C3C00FA29AA0">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>DS_STREET</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>A654D18E-5B68-9EF9-A23D-817B693F5833</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_NUMBER" id="815BE4DB-7BEF-6B5D-9454-3143C54F050B">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>DS_NUMBER</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>2FFB01E7-A333-9715-FA2A-A862AB368B03</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMPLEMENT" id="F4C117DF-03D8-76D6-72B3-6887C2A7D64E">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>DS_COMPLEMENT</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>A239D1EB-7871-3306-48C7-BE896B864619</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DISTRICT" id="47C1D131-E270-99E9-EB72-753280FAB3DA">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>DS_DISTRICT</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>DCE86633-9D6E-575A-52F2-5B2F3D3E2536</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CITY" id="058DB02D-6F03-F12B-E0B4-5ACF23EC31B9">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>DS_CITY</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>89B9CD58-AFD2-4F20-0562-2CE63CC572E6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_STATE" id="73ED393D-F24B-EBAB-CBD3-24DC48003FEA">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ADDRESS</sourceObjSchema>
+<sourceObjName>DS_STATE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>7B1ED13A-CD37-E00A-A23D-E399C369E517</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC0A554C-89DC-77D1-9B1D-5C7EFCDF3BFE" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_AMPZ_ADDRESS_PK">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>SYS_C004110346</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>65B63500-4266-522A-1305-1B22218A0242</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1BB3AD9-C1E6-4E8C-DE0A-985660DDC52A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

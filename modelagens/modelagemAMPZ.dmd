@@ -5,4 +5,9 @@
 <ownerDesignName>modelagemAMPZ</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>C54240C8-9F32-452C-4C77-6D8F7E476E8F</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="AECEC85E-8D62-84FA-5D16-9A46B79A4811">
+<designStoragePath>C:\WorkSpaces\Ampz\modelagens</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>

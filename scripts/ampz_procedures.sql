@@ -26,9 +26,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_address.NEXTVAL INTO v_id_address FROM dual;
+    SELECT seq_t_ampz_address.NEXTVAL INTO v_id_address FROM dual;
 
-    INSERT INTO T_GXP_ADDRESS (id_address, ds_street, ds_number, ds_complement, ds_district, ds_city, ds_state)
+    INSERT INTO T_ampz_ADDRESS (id_address, ds_street, ds_number, ds_complement, ds_district, ds_city, ds_state)
     VALUES (v_id_address, p_ds_street, p_ds_number, p_ds_complement, p_ds_district, p_ds_city, p_ds_state);
 
 EXCEPTION
@@ -54,9 +54,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_user.NEXTVAL INTO v_id_user FROM dual;
+    SELECT seq_t_ampz_user.NEXTVAL INTO v_id_user FROM dual;
 
-    INSERT INTO T_GXP_USER (id_user, ds_name, ds_email, ds_password, id_address, dt_birthdate)
+    INSERT INTO T_ampz_USER (id_user, ds_name, ds_email, ds_password, id_address, dt_birthdate)
     VALUES (v_id_user, p_ds_name, p_ds_email, p_ds_password, p_id_address, p_dt_birthdate);
 
 EXCEPTION
@@ -80,9 +80,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_kid.NEXTVAL INTO v_id_kid FROM dual;
+    SELECT seq_t_ampz_kid.NEXTVAL INTO v_id_kid FROM dual;
 
-    INSERT INTO T_GXP_KID (id_kid, id_user, ds_name, dt_birthdate)
+    INSERT INTO T_ampz_KID (id_kid, id_user, ds_name, dt_birthdate)
     VALUES (v_id_kid, p_id_user, p_ds_name, p_dt_birthdate);
 
 EXCEPTION
@@ -109,9 +109,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_device.NEXTVAL INTO v_id_device FROM dual;
+    SELECT seq_t_ampz_device.NEXTVAL INTO v_id_device FROM dual;
 
-    INSERT INTO T_GXP_DEVICE (id_device, id_kid, ds_name, ds_type, ds_operating_system, vl_energy_consumption, vl_energy_saved)
+    INSERT INTO T_ampz_DEVICE (id_device, id_kid, ds_name, ds_type, ds_operating_system, vl_energy_consumption, vl_energy_saved)
     VALUES (v_id_device, p_id_kid, p_ds_name, p_ds_type, p_ds_operating_system, p_vl_energy_consumption, p_vl_energy_saved);
 
 EXCEPTION
@@ -134,9 +134,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_community.NEXTVAL INTO v_id_community FROM dual;
+    SELECT seq_t_ampz_community.NEXTVAL INTO v_id_community FROM dual;
 
-    INSERT INTO T_GXP_COMMUNITY (id_community, ds_name, ds_description)
+    INSERT INTO T_ampz_COMMUNITY (id_community, ds_name, ds_description)
     VALUES (v_id_community, p_ds_name, p_ds_description);
 
 EXCEPTION
@@ -160,9 +160,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_community_participation.NEXTVAL INTO v_id_participation FROM dual;
+    SELECT seq_t_ampz_community_participation.NEXTVAL INTO v_id_participation FROM dual;
 
-    INSERT INTO T_GXP_COMMUNITY_PARTICIPATION (id_participation, id_kid, id_community, points)
+    INSERT INTO T_ampz_COMMUNITY_PARTICIPATION (id_participation, id_kid, id_community, points)
     VALUES (v_id_participation, p_id_kid, p_id_community, p_points);
 
 EXCEPTION
@@ -189,9 +189,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_challenge_goal.NEXTVAL INTO v_id_challenge FROM dual;
+    SELECT seq_t_ampz_challenge_goal.NEXTVAL INTO v_id_challenge FROM dual;
 
-    INSERT INTO T_GXP_CHALLENGE_GOAL (id_challenge, ds_description, vl_score, dt_start, dt_end, vl_energy_required, id_community)
+    INSERT INTO T_ampz_CHALLENGE_GOAL (id_challenge, ds_description, vl_score, dt_start, dt_end, vl_energy_required, id_community)
     VALUES (v_id_challenge, p_ds_description, p_vl_score, p_dt_start, p_dt_end, p_vl_energy_required, p_id_community);
 
 EXCEPTION
@@ -217,9 +217,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_energy_consumption.NEXTVAL INTO v_id_energy_consumption FROM dual;
+    SELECT seq_t_ampz_energy_consumption.NEXTVAL INTO v_id_energy_consumption FROM dual;
 
-    INSERT INTO T_GXP_ENERGY_CONSUMPTION (id_energy_consumption, id_device, ds_consumption_type, vl_consumption, vl_energy_saved, dt_consumption)
+    INSERT INTO T_ampz_ENERGY_CONSUMPTION (id_energy_consumption, id_device, ds_consumption_type, vl_consumption, vl_energy_saved, dt_consumption)
     VALUES (v_id_energy_consumption, p_id_device, p_ds_consumption_type, p_vl_consumption, p_vl_energy_saved, p_dt_consumption);
 
 EXCEPTION
@@ -244,9 +244,9 @@ BEGIN
         RAISE ex_insufficient_data;
     END IF;
 
-    SELECT seq_t_gxp_score.NEXTVAL INTO v_id_score FROM dual;
+    SELECT seq_t_ampz_score.NEXTVAL INTO v_id_score FROM dual;
 
-    INSERT INTO T_GXP_SCORE (id_score, id_kid, id_challenge, vl_points, dt_completion)
+    INSERT INTO T_ampz_SCORE (id_score, id_kid, id_challenge, vl_points, dt_completion)
     VALUES (v_id_score, p_id_kid, p_id_challenge, p_vl_points, p_dt_completion);
 
 EXCEPTION

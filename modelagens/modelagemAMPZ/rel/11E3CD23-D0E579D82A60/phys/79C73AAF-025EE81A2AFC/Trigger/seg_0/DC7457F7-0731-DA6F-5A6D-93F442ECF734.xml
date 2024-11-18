@@ -9,18 +9,18 @@
 <actions>INSERT, UPDATE, DELETE</actions>
 <body><![CDATA[BEGIN
     IF INSERTING THEN
-        INSERT INTO t_audit_gxp_device (audit_id, id_device, operation, operation_date, new_name, new_energy_consumption)
-        VALUES (seq_t_audit_gxp_device.NEXTVAL, :NEW.id_device, 'INSERT', SYSTIMESTAMP, :NEW.ds_name, :NEW.vl_energy_consumption);
+        INSERT INTO t_audit_ampz_device (audit_id, id_device, operation, operation_date, new_name, new_energy_consumption)
+        VALUES (seq_t_audit_ampz_device.NEXTVAL, :NEW.id_device, 'INSERT', SYSTIMESTAMP, :NEW.ds_name, :NEW.vl_energy_consumption);
     ELSIF UPDATING THEN
-        INSERT INTO t_audit_gxp_device (audit_id, id_device, operation, operation_date, old_name, old_energy_consumption, new_name, new_energy_consumption)
-        VALUES (seq_t_audit_gxp_device.NEXTVAL, :OLD.id_device, 'UPDATE', SYSTIMESTAMP, :OLD.ds_name, :OLD.vl_energy_consumption, :NEW.ds_name, :NEW.vl_energy_consumption);
+        INSERT INTO t_audit_ampz_device (audit_id, id_device, operation, operation_date, old_name, old_energy_consumption, new_name, new_energy_consumption)
+        VALUES (seq_t_audit_ampz_device.NEXTVAL, :OLD.id_device, 'UPDATE', SYSTIMESTAMP, :OLD.ds_name, :OLD.vl_energy_consumption, :NEW.ds_name, :NEW.vl_energy_consumption);
     ELSIF DELETING THEN
-        INSERT INTO t_audit_gxp_device (audit_id, id_device, operation, operation_date, old_name, old_energy_consumption)
-        VALUES (seq_t_audit_gxp_device.NEXTVAL, :OLD.id_device, 'DELETE', SYSTIMESTAMP, :OLD.ds_name, :OLD.vl_energy_consumption);
+        INSERT INTO t_audit_ampz_device (audit_id, id_device, operation, operation_date, old_name, old_energy_consumption)
+        VALUES (seq_t_audit_ampz_device.NEXTVAL, :OLD.id_device, 'DELETE', SYSTIMESTAMP, :OLD.ds_name, :OLD.vl_energy_consumption);
     END IF;
 END;
 ]]></body>
 <triggerTime>AFTER</triggerTime>
 <owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
-<table>74238A99-8992-DE0A-BAE5-58B8E980C258</table>
+<table>52B7D78E-03F6-13DE-1F42-BCDEA6F869B6</table>
 </TriggerOraclev10g>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="T_AMPZ_CHALLENGE_GOAL" directorySegmentName="seg_0" id="625F844C-5F0D-AC40-2BE4-DC93B234491A">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B3A4DE97-DD11-9613-E0CE-A25B69602687</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DT_END" id="4FBFEF68-ED8E-0B5D-E59B-FA095F9ABC28">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_COMMUNITY" id="88F161B9-25BE-166C-DD54-B4B7024A2349">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VL_ENERGY_REQUIRED" id="919D067E-DC46-F87D-215E-424A36DB7337">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CHALLENGE" id="ABA69EC6-3527-3D2E-D5AF-D2F8FFFF8A75">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VL_SCORE" id="AE1ECC18-E369-0007-51D9-8EE85ECA66D7">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_DESCRIPTION" id="B9DA8A9C-B724-5E18-99DC-2D03472EA6A1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_START" id="D4019318-5813-6CE1-3003-34B5AE9083E4">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CHALLENGE_COMMUNITY" id="E0E91230-94D6-3BF1-F8C6-3353139596FF">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ForeignKey>
+</foreignKeys>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0002439812C00002$$" id="CE75BAA7-E36E-BC2B-3DBE-CA7C59931B06">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>DS_DESCRIPTION</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="T_AMPZ_CHALLENGE_GOAL_PK" id="6A9A75D3-EDD8-3561-AC30-D3ACE346D26E">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<segment>BDB09FFD-3F4F-7644-B529-D02C0C4C4E92</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<indexSegment>BDB09FFD-3F4F-7644-B529-D02C0C4C4E92</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

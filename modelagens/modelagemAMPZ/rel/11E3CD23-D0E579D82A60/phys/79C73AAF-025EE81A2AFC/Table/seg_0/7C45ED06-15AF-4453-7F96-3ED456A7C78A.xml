@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="T_AUDIT_AMPZ_COMMUNITY" directorySegmentName="seg_0" id="7C45ED06-15AF-4453-7F96-3ED456A7C78A">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B3A4DE97-DD11-9613-E0CE-A25B69602687</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NEW_NAME" id="1A5F71CB-4018-C6E1-97B8-57907A76A453">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OLD_TOTAL_POINTS" id="555ADE2C-DFAD-F51A-09AD-55E1EC175054">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUDIT_ID" id="5A950045-4606-614F-0238-B0CA682D58E0">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_COMMUNITY" id="73F541D5-AC6E-BDA5-1188-A423BBDCEC68">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OLD_NAME" id="7F33AAAA-96C0-FAD0-CFE0-41968281ABEC">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPERATION" id="820DFFCE-EC3B-0F3D-9047-2D6ED5047287">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEW_TOTAL_POINTS" id="85E2E468-D45A-DEAA-BA3B-61D72A875EDF">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPERATION_DATE" id="D3C497AE-E15E-30F7-86D9-BCF5FDFCE456">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUDIT_COMMUNITY" id="64FBCA8E-132A-81A8-6E56-118E4A6519B6">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="T_AUDIT_AMPZ_COMMUNITY_PK" id="D3B4C838-A7B1-F93B-CC86-AF45C4738A8C">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<segment>BDB09FFD-3F4F-7644-B529-D02C0C4C4E92</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<indexSegment>BDB09FFD-3F4F-7644-B529-D02C0C4C4E92</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

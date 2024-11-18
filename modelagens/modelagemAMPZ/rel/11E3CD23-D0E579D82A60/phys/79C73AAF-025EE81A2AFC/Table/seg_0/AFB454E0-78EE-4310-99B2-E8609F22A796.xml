@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="T_AMPZ_ADDRESS" directorySegmentName="seg_0" id="AFB454E0-78EE-4310-99B2-E8609F22A796">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B3A4DE97-DD11-9613-E0CE-A25B69602687</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DS_CITY" id="058DB02D-6F03-F12B-E0B4-5ACF23EC31B9">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_DISTRICT" id="47C1D131-E270-99E9-EB72-753280FAB3DA">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_STATE" id="73ED393D-F24B-EBAB-CBD3-24DC48003FEA">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_NUMBER" id="815BE4DB-7BEF-6B5D-9454-3143C54F050B">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ADDRESS" id="B1BB3AD9-C1E6-4E8C-DE0A-985660DDC52A">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_STREET" id="CF91188E-4C03-83C9-16DB-C3C00FA29AA0">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_COMPLEMENT" id="F4C117DF-03D8-76D6-72B3-6887C2A7D64E">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="T_AMPZ_ADDRESS_PK" id="BC0A554C-89DC-77D1-9B1D-5C7EFCDF3BFE">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<segment>BDB09FFD-3F4F-7644-B529-D02C0C4C4E92</segment>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+<indexSegment>BDB09FFD-3F4F-7644-B529-D02C0C4C4E92</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -9,18 +9,18 @@
 <actions>INSERT, UPDATE, DELETE</actions>
 <body><![CDATA[BEGIN
     IF INSERTING THEN
-        INSERT INTO t_audit_gxp_address (audit_id, id_address, operation, operation_date, new_street, new_number)
-        VALUES (seq_t_audit_gxp_address.NEXTVAL, :NEW.id_address, 'INSERT', SYSTIMESTAMP, :NEW.ds_street, :NEW.ds_number);
+        INSERT INTO t_audit_ampz_address (audit_id, id_address, operation, operation_date, new_street, new_number)
+        VALUES (seq_t_audit_ampz_address.NEXTVAL, :NEW.id_address, 'INSERT', SYSTIMESTAMP, :NEW.ds_street, :NEW.ds_number);
     ELSIF UPDATING THEN
-        INSERT INTO t_audit_gxp_address (audit_id, id_address, operation, operation_date, old_street, old_number, new_street, new_number)
-        VALUES (seq_t_audit_gxp_address.NEXTVAL, :OLD.id_address, 'UPDATE', SYSTIMESTAMP, :OLD.ds_street, :OLD.ds_number, :NEW.ds_street, :NEW.ds_number);
+        INSERT INTO t_audit_ampz_address (audit_id, id_address, operation, operation_date, old_street, old_number, new_street, new_number)
+        VALUES (seq_t_audit_ampz_address.NEXTVAL, :OLD.id_address, 'UPDATE', SYSTIMESTAMP, :OLD.ds_street, :OLD.ds_number, :NEW.ds_street, :NEW.ds_number);
     ELSIF DELETING THEN
-        INSERT INTO t_audit_gxp_address (audit_id, id_address, operation, operation_date, old_street, old_number)
-        VALUES (seq_t_audit_gxp_address.NEXTVAL, :OLD.id_address, 'DELETE', SYSTIMESTAMP, :OLD.ds_street, :OLD.ds_number);
+        INSERT INTO t_audit_ampz_address (audit_id, id_address, operation, operation_date, old_street, old_number)
+        VALUES (seq_t_audit_ampz_address.NEXTVAL, :OLD.id_address, 'DELETE', SYSTIMESTAMP, :OLD.ds_street, :OLD.ds_number);
     END IF;
 END;
 ]]></body>
 <triggerTime>AFTER</triggerTime>
 <owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
-<table>024CC514-ED77-D7C2-07A6-7A22714BF6CA</table>
+<table>AFB454E0-78EE-4310-99B2-E8609F22A796</table>
 </TriggerOraclev10g>

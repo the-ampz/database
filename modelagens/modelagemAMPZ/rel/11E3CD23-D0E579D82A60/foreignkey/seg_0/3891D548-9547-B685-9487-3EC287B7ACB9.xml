@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3891D548-9547-B685-9487-3EC287B7ACB9" containerWithKeyObject="52B7D78E-03F6-13DE-1F42-BCDEA6F869B6" localFKIndex="6797D904-0A08-EEE8-1CA7-41C881320EA0" name="FK_DEVICE_KIDv1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>7C365AEB-5637-17E9-1480-5F1311A0BC6E</importedID>
+<referredTableLongName>RM99409.T_AMPZ_KID</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B54DCA8B-708E-1480-38A9-223892076200</referredTableID>
+<keyObject>5B9B8EA2-E659-DADD-B50C-7C0C08D35CEB</keyObject>
+<referredKeyID>5B9B8EA2-E659-DADD-B50C-7C0C08D35CEB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_KID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

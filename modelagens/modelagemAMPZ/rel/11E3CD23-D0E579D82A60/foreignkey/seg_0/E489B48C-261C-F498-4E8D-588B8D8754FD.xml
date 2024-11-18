@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E489B48C-261C-F498-4E8D-588B8D8754FD" containerWithKeyObject="7C45ED06-15AF-4453-7F96-3ED456A7C78A" localFKIndex="64FBCA8E-132A-81A8-6E56-118E4A6519B6" name="FK_AUDIT_COMMUNITYv1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>C3AB4B10-421A-98BA-916F-8CD183471033</importedID>
+<referredTableLongName>RM99409.T_AMPZ_COMMUNITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C9C88FC-EF93-37D1-EEBE-DA4DD9D64A10</referredTableID>
+<keyObject>7E482303-666E-0F7F-F420-F03C4B5D4417</keyObject>
+<referredKeyID>7E482303-666E-0F7F-F420-F03C4B5D4417</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_COMMUNITY</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -9,18 +9,18 @@
 <actions>INSERT, UPDATE, DELETE</actions>
 <body><![CDATA[BEGIN
     IF INSERTING THEN
-        INSERT INTO t_audit_gxp_score (audit_id, id_score, id_kid, id_challenge, operation, operation_date, new_points)
-        VALUES (seq_t_audit_gxp_score.NEXTVAL, :NEW.id_score, :NEW.id_kid, :NEW.id_challenge, 'INSERT', SYSTIMESTAMP, :NEW.vl_points);
+        INSERT INTO t_audit_ampz_score (audit_id, id_score, id_kid, id_challenge, operation, operation_date, new_points)
+        VALUES (seq_t_audit_ampz_score.NEXTVAL, :NEW.id_score, :NEW.id_kid, :NEW.id_challenge, 'INSERT', SYSTIMESTAMP, :NEW.vl_points);
     ELSIF UPDATING THEN
-        INSERT INTO t_audit_gxp_score (audit_id, id_score, id_kid, id_challenge, operation, operation_date, old_points, new_points)
-        VALUES (seq_t_audit_gxp_score.NEXTVAL, :OLD.id_score, :OLD.id_kid, :OLD.id_challenge, 'UPDATE', SYSTIMESTAMP, :OLD.vl_points, :NEW.vl_points);
+        INSERT INTO t_audit_ampz_score (audit_id, id_score, id_kid, id_challenge, operation, operation_date, old_points, new_points)
+        VALUES (seq_t_audit_ampz_score.NEXTVAL, :OLD.id_score, :OLD.id_kid, :OLD.id_challenge, 'UPDATE', SYSTIMESTAMP, :OLD.vl_points, :NEW.vl_points);
     ELSIF DELETING THEN
-        INSERT INTO t_audit_gxp_score (audit_id, id_score, id_kid, id_challenge, operation, operation_date, old_points)
-        VALUES (seq_t_audit_gxp_score.NEXTVAL, :OLD.id_score, :OLD.id_kid, :OLD.id_challenge, 'DELETE', SYSTIMESTAMP, :OLD.vl_points);
+        INSERT INTO t_audit_ampz_score (audit_id, id_score, id_kid, id_challenge, operation, operation_date, old_points)
+        VALUES (seq_t_audit_ampz_score.NEXTVAL, :OLD.id_score, :OLD.id_kid, :OLD.id_challenge, 'DELETE', SYSTIMESTAMP, :OLD.vl_points);
     END IF;
 END;
 ]]></body>
 <triggerTime>AFTER</triggerTime>
 <owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
-<table>223A6186-FCE4-48AD-F06F-24E51041D5BB</table>
+<table>B1F19674-2DC6-8688-A84A-C9AEEA55638C</table>
 </TriggerOraclev10g>

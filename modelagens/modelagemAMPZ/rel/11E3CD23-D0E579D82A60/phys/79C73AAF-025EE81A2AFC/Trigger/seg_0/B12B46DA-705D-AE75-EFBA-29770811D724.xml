@@ -9,18 +9,18 @@
 <actions>INSERT, UPDATE, DELETE</actions>
 <body><![CDATA[BEGIN
     IF INSERTING THEN
-        INSERT INTO t_audit_gxp_energy_consumption (audit_id, id_energy_consumption, id_device, operation, operation_date, new_consumption_type, new_energy_saved)
-        VALUES (seq_t_audit_gxp_energy_consumption.NEXTVAL, :NEW.id_energy_consumption, :NEW.id_device, 'INSERT', SYSTIMESTAMP, :NEW.ds_consumption_type, :NEW.vl_energy_saved);
+        INSERT INTO t_audit_ampz_energy_consumption (audit_id, id_energy_consumption, id_device, operation, operation_date, new_consumption_type, new_energy_saved)
+        VALUES (seq_t_audit_ampz_energy_consumption.NEXTVAL, :NEW.id_energy_consumption, :NEW.id_device, 'INSERT', SYSTIMESTAMP, :NEW.ds_consumption_type, :NEW.vl_energy_saved);
     ELSIF UPDATING THEN
-        INSERT INTO t_audit_gxp_energy_consumption (audit_id, id_energy_consumption, id_device, operation, operation_date, old_consumption_type, old_energy_saved, new_consumption_type, new_energy_saved)
-        VALUES (seq_t_audit_gxp_energy_consumption.NEXTVAL, :OLD.id_energy_consumption, :OLD.id_device, 'UPDATE', SYSTIMESTAMP, :OLD.ds_consumption_type, :OLD.vl_energy_saved, :NEW.ds_consumption_type, :NEW.vl_energy_saved);
+        INSERT INTO t_audit_ampz_energy_consumption (audit_id, id_energy_consumption, id_device, operation, operation_date, old_consumption_type, old_energy_saved, new_consumption_type, new_energy_saved)
+        VALUES (seq_t_audit_ampz_energy_consumption.NEXTVAL, :OLD.id_energy_consumption, :OLD.id_device, 'UPDATE', SYSTIMESTAMP, :OLD.ds_consumption_type, :OLD.vl_energy_saved, :NEW.ds_consumption_type, :NEW.vl_energy_saved);
     ELSIF DELETING THEN
-        INSERT INTO t_audit_gxp_energy_consumption (audit_id, id_energy_consumption, id_device, operation, operation_date, old_consumption_type, old_energy_saved)
-        VALUES (seq_t_audit_gxp_energy_consumption.NEXTVAL, :OLD.id_energy_consumption, :OLD.id_device, 'DELETE', SYSTIMESTAMP, :OLD.ds_consumption_type, :OLD.vl_energy_saved);
+        INSERT INTO t_audit_ampz_energy_consumption (audit_id, id_energy_consumption, id_device, operation, operation_date, old_consumption_type, old_energy_saved)
+        VALUES (seq_t_audit_ampz_energy_consumption.NEXTVAL, :OLD.id_energy_consumption, :OLD.id_device, 'DELETE', SYSTIMESTAMP, :OLD.ds_consumption_type, :OLD.vl_energy_saved);
     END IF;
 END;
 ]]></body>
 <triggerTime>AFTER</triggerTime>
 <owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
-<table>EFCBAFA2-29DD-FA70-0440-F000508B7818</table>
+<table>32FE90DE-CE67-31BD-CD3B-760921D9438C</table>
 </TriggerOraclev10g>

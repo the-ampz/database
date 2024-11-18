@@ -6,4 +6,14 @@
 <createdTime>2024-11-17 01:17:00 UTC</createdTime>
 <ownerDesignName>modelagemAMPZ</ownerDesignName>
 <schemaObject>E8BC7BD7-7D39-8B37-6F35-43FE2F78375E</schemaObject>
+<defTableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</defTableSpace>
+<profile>ALUNOS</profile>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem3" id="17D38B50-BA1D-CD27-2C7A-E7A1EC7EC27B">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<tableSpace>001EA4B0-3A05-0734-2B7C-A2F2F913659E</tableSpace>
+</QuotaItem>
+</quotaItems>
 </UserOraclev10g>

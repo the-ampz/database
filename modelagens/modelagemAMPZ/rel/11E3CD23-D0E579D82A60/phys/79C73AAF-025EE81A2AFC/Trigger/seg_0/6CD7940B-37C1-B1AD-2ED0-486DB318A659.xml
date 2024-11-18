@@ -9,18 +9,18 @@
 <actions>INSERT, UPDATE, DELETE</actions>
 <body><![CDATA[BEGIN
     IF INSERTING THEN
-        INSERT INTO t_audit_gxp_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, new_description, new_score)
-        VALUES (seq_t_audit_gxp_challenge_goal.NEXTVAL, :NEW.id_challenge, :NEW.id_community, 'INSERT', SYSTIMESTAMP, :NEW.ds_description, :NEW.vl_score);
+        INSERT INTO t_audit_ampz_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, new_description, new_score)
+        VALUES (seq_t_audit_ampz_challenge_goal.NEXTVAL, :NEW.id_challenge, :NEW.id_community, 'INSERT', SYSTIMESTAMP, :NEW.ds_description, :NEW.vl_score);
     ELSIF UPDATING THEN
-        INSERT INTO t_audit_gxp_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, old_description, old_score, new_description, new_score)
-        VALUES (seq_t_audit_gxp_challenge_goal.NEXTVAL, :OLD.id_challenge, :OLD.id_community, 'UPDATE', SYSTIMESTAMP, :OLD.ds_description, :OLD.vl_score, :NEW.ds_description, :NEW.vl_score);
+        INSERT INTO t_audit_ampz_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, old_description, old_score, new_description, new_score)
+        VALUES (seq_t_audit_ampz_challenge_goal.NEXTVAL, :OLD.id_challenge, :OLD.id_community, 'UPDATE', SYSTIMESTAMP, :OLD.ds_description, :OLD.vl_score, :NEW.ds_description, :NEW.vl_score);
     ELSIF DELETING THEN
-        INSERT INTO t_audit_gxp_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, old_description, old_score)
-        VALUES (seq_t_audit_gxp_challenge_goal.NEXTVAL, :OLD.id_challenge, :OLD.id_community, 'DELETE', SYSTIMESTAMP, :OLD.ds_description, :OLD.vl_score);
+        INSERT INTO t_audit_ampz_challenge_goal (audit_id, id_challenge, id_community, operation, operation_date, old_description, old_score)
+        VALUES (seq_t_audit_ampz_challenge_goal.NEXTVAL, :OLD.id_challenge, :OLD.id_community, 'DELETE', SYSTIMESTAMP, :OLD.ds_description, :OLD.vl_score);
     END IF;
 END;
 ]]></body>
 <triggerTime>AFTER</triggerTime>
 <owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
-<table>D5672D9E-E084-C2AA-2F35-8406250D8F1F</table>
+<table>625F844C-5F0D-AC40-2BE4-DC93B234491A</table>
 </TriggerOraclev10g>

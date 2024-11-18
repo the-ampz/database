@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AUDIT_PARTICIPATIONv1" directorySegmentName="seg_0" id="C71AD60E-6352-77FE-894E-6ED8034E679B">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:35:05 UTC</createdTime>
+<generatorID>128B8E33-4D5D-D22E-92FE-2D356FD6B032</generatorID>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<engineerTo>
+<item key="11E3CD23-4D99-0E2D-109F-D0E579D82A60" value="true"/>
+</engineerTo>
+<sourcePk>EF615A03-784A-70F2-5E26-CDC3D43B03ED</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>113D0912-E581-23C6-49FC-92E5F92355B9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C8B7AA80-7873-B6E3-4B00-086220E3081D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

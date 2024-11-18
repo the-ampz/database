@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32FE90DE-CE67-31BD-CD3B-760921D9438C" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_AMPZ_ENERGY_CONSUMPTION">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>T_AMPZ_ENERGY_CONSUMPTION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>C4A2EFDB-3E7E-2A62-5A39-5E99EA62ABFF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ENERGY_CONSUMPTION" id="44F4CB10-CB3E-22F0-15B0-AEE5C2BF9E14">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ENERGY_CONSUMPTION</sourceObjSchema>
+<sourceObjName>ID_ENERGY_CONSUMPTION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>1EE132E5-D6A0-61C1-EAC1-DE4B777C3601</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DEVICE" id="D768C3BE-E717-6D11-44F7-2A0DEC948BEB">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ENERGY_CONSUMPTION</sourceObjSchema>
+<sourceObjName>ID_DEVICE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>37FB8469-955A-2859-C0E4-3141EB70697F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E43671A-7A9C-C980-9B27-F44AF23BDDA0" referredColumn="69B3C4E6-68E5-CA1C-5593-09D5598DD35E"/>
+</associations>
+</Column>
+<Column name="DS_CONSUMPTION_TYPE" id="2DB329B1-D36E-1579-5746-029752171F02">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ENERGY_CONSUMPTION</sourceObjSchema>
+<sourceObjName>DS_CONSUMPTION_TYPE</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>D0D0D13C-725D-5A8E-4CF1-57F93F0BD811</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_CONSUMPTION" id="62886D55-DD1A-CB82-55B0-074FB001000A">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ENERGY_CONSUMPTION</sourceObjSchema>
+<sourceObjName>VL_CONSUMPTION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>2FD91539-DA81-7E2E-43CF-D2D187DF59FB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_ENERGY_SAVED" id="8C2CDCF5-3E04-FE42-6A0C-274C6AC2753C">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ENERGY_CONSUMPTION</sourceObjSchema>
+<sourceObjName>VL_ENERGY_SAVED</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>54857BA5-5CB9-FC9E-9BB4-BB34C593C3FE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CONSUMPTION" id="6A5675DA-41C8-9A52-FB89-41372F94AFDA">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_ENERGY_CONSUMPTION</sourceObjSchema>
+<sourceObjName>DT_CONSUMPTION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>4BA62E42-A6A7-1662-9382-28B47FD87B99</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41F1BDC6-AD9D-B020-CA00-563B32499662" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_AMPZ_ENERGY_CONSUMPTION_PK">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>SYS_C004110375</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>0BF5E58D-8E85-BD7F-DE00-676A428C79D9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44F4CB10-CB3E-22F0-15B0-AEE5C2BF9E14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17EC5D87-AE84-C426-4165-55AD8E91C283" name="FK_ENERGY_CONSUMPTION_DEVICEv1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D768C3BE-E717-6D11-44F7-2A0DEC948BEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

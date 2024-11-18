@@ -6,6 +6,81 @@
 <createdBy>Acer</createdBy>
 <createdTime>2024-11-17 01:17:01 UTC</createdTime>
 <ownerDesignName>modelagemAMPZ</ownerDesignName>
+<dsInitialExtent>65536</dsInitialExtent>
+<dsMaxExtents>2147483645</dsMaxExtents>
 <emUniformSize>0</emUniformSize>
 <extentManagement>LOCAL</extentManagement>
+<minExtLen>65536</minExtLen>
+<dsCompression>NOCOMPRESS</dsCompression>
+<encrypt>NO</encrypt>
+<fileType>SMALLFILE</fileType>
+<inMemory>NO</inMemory>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="TBSPC_ALUNOS_01.DBF" id="07B74836-E017-CF6F-F79D-996AF0464FBA">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>/u02/oradata/CDB1/orcl/TBSPC_ALUNOS_01.DBF</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>/u02/oradata/CDB1/orcl/TBSPC_ALUNOS_01.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>31457280</size>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="TBSPC_ALUNOS_02.DBF" id="C160472F-83C9-4290-E53B-8537977DD35B">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>/u03/oradata/CDB1/orcl/TBSPC_ALUNOS_02.DBF</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>/u03/oradata/CDB1/orcl/TBSPC_ALUNOS_02.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>31457280</size>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="TBSPC_ALUNOS_03.DBF" id="7DFA8E91-C09F-6EDB-1A9A-E22E63935C43">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>/u02/oradata/CDB1/orcl/TBSPC_ALUNOS_03.DBF</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>/u02/oradata/CDB1/orcl/TBSPC_ALUNOS_03.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>31457280</size>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="TBSPC_ALUNOS_04.DBF" id="C9EDC0F7-2DDF-C452-62E6-3D1E5865A7B2">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>/u03/oradata/CDB1/orcl/TBSPC_ALUNOS_04.DBF</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>/u03/oradata/CDB1/orcl/TBSPC_ALUNOS_04.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>31457280</size>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="TBSPC_ALUNOS_05.DBF" id="32313261-B751-FA9B-DC4E-14AE0915B522">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>/u02/oradata/CDB1/orcl/TBSPC_ALUNOS_05.DBF</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>/u02/oradata/CDB1/orcl/TBSPC_ALUNOS_05.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>31457280</size>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="TBSPC_ALUNOS_06.DBF" id="8F0B01DF-116C-764E-20C6-9B5CA5A3A702">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjName>/u03/oradata/CDB1/orcl/TBSPC_ALUNOS_06.DBF</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>/u03/oradata/CDB1/orcl/TBSPC_ALUNOS_06.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>31457280</size>
+</DataFile>
+</dataFiles>
 </TableSpaceOraclev10g>

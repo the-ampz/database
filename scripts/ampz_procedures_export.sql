@@ -8,7 +8,7 @@ CREATE OR REPLACE PROCEDURE exportar_tabelas_separadas AS
     v_file_handle UTL_FILE.FILE_TYPE; -- Declaração da variável aqui
 
 BEGIN
-    -- Exportar t_gxp_address
+    -- Exportar t_ampz_address
     v_json_output := '{';
     SELECT JSON_ARRAYAGG(JSON_OBJECT(
         'id_address' VALUE id_address,
@@ -19,12 +19,12 @@ BEGIN
         'ds_city' VALUE ds_city,
         'ds_state' VALUE ds_state
     )) INTO v_json_output
-    FROM t_gxp_address;
+    FROM t_ampz_address;
 
     v_json_output := v_json_output || '}';
     
     BEGIN
-        v_file_handle := UTL_FILE.FOPEN('DIRETORIO_JSON', 't_gxp_address.json', 'w');
+        v_file_handle := UTL_FILE.FOPEN('DIRETORIO_JSON', 't_ampz_address.json', 'w');
         UTL_FILE.PUT_LINE(v_file_handle, v_json_output);
         UTL_FILE.FCLOSE(v_file_handle);
     EXCEPTION
@@ -32,12 +32,12 @@ BEGIN
             IF UTL_FILE.IS_OPEN(v_file_handle) THEN
                 UTL_FILE.FCLOSE(v_file_handle);
             END IF;
-            DBMS_OUTPUT.PUT_LINE('Erro ao exportar t_gxp_address: ' || SQLERRM);
+            DBMS_OUTPUT.PUT_LINE('Erro ao exportar t_ampz_address: ' || SQLERRM);
             RAISE;
     END;
 
     -- Continue com as exportações para as outras tabelas...
-    -- Exemplo para t_gxp_user
+    -- Exemplo para t_ampz_user
     v_json_output := '{';
     SELECT JSON_ARRAYAGG(JSON_OBJECT(
         'id_user' VALUE id_user,
@@ -46,12 +46,12 @@ BEGIN
         'dt_birthdate' VALUE dt_birthdate,
         'id_address' VALUE id_address
     )) INTO v_json_output
-    FROM t_gxp_user;
+    FROM t_ampz_user;
 
     v_json_output := v_json_output || '}';
     
     BEGIN
-        v_file_handle := UTL_FILE.FOPEN('DIRETORIO_JSON', 't_gxp_user.json', 'w');
+        v_file_handle := UTL_FILE.FOPEN('DIRETORIO_JSON', 't_ampz_user.json', 'w');
         UTL_FILE.PUT_LINE(v_file_handle, v_json_output);
         UTL_FILE.FCLOSE(v_file_handle);
     EXCEPTION
@@ -59,7 +59,7 @@ BEGIN
             IF UTL_FILE.IS_OPEN(v_file_handle) THEN
                 UTL_FILE.FCLOSE(v_file_handle);
             END IF;
-            DBMS_OUTPUT.PUT_LINE('Erro ao exportar t_gxp_user: ' || SQLERRM);
+            DBMS_OUTPUT.PUT_LINE('Erro ao exportar t_ampz_user: ' || SQLERRM);
             RAISE;
     END;
 
@@ -76,8 +76,8 @@ BEGIN
     -- Inicia o objeto JSON
     v_json_output := '{';
 
-    -- Exportar t_gxp_address
-    v_json_output := v_json_output || '"t_gxp_address": ';
+    -- Exportar t_ampz_address
+    v_json_output := v_json_output || '"t_ampz_address": ';
     SELECT JSON_ARRAYAGG(JSON_OBJECT(
         'id_address' VALUE id_address,
         'ds_street' VALUE ds_street,
@@ -87,12 +87,12 @@ BEGIN
         'ds_city' VALUE ds_city,
         'ds_state' VALUE ds_state
     )) INTO v_json_output
-    FROM t_gxp_address;
+    FROM t_ampz_address;
 
     v_json_output := v_json_output || ',';
 
-    -- Exportar t_gxp_user
-    v_json_output := v_json_output || '"t_gxp_user": ';
+    -- Exportar t_ampz_user
+    v_json_output := v_json_output || '"t_ampz_user": ';
     SELECT JSON_ARRAYAGG(JSON_OBJECT(
         'id_user' VALUE id_user,
         'ds_name' VALUE ds_name,
@@ -100,7 +100,7 @@ BEGIN
         'dt_birthdate' VALUE dt_birthdate,
         'id_address' VALUE id_address
     )) INTO v_json_output
-    FROM t_gxp_user;
+    FROM t_ampz_user;
 
     v_json_output := v_json_output || ',';
 

@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8E9CFA6-6DE8-87A7-B643-746CFF9F9D5E" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_AMPZ_COMMUNITY_PARTICIPATION">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>T_AMPZ_COMMUNITY_PARTICIPATION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>D4095E81-27BD-2E68-2D43-9E65411BBE5E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PARTICIPATION" id="8481D4EF-75D6-4438-4572-41D83F43471D">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_COMMUNITY_PARTICIPATION</sourceObjSchema>
+<sourceObjName>ID_PARTICIPATION</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>FA561C65-1ECD-F675-8BA5-7E788C7B31AC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_KID" id="E2C993D4-96B7-46D3-E1A5-BE9DDD10D120">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_COMMUNITY_PARTICIPATION</sourceObjSchema>
+<sourceObjName>ID_KID</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>AED79B1B-2D2D-BFF7-EC59-DCF3DE56F446</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FE9A946-8A8A-2B21-F85C-7B9FB014D77C" referredColumn="E761FDED-9A82-62B4-DDBB-0E67B0FC00A9"/>
+</associations>
+</Column>
+<Column name="ID_COMMUNITY" id="EC2F01D2-1B8E-FAE0-18AD-071D1F5E902F">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_COMMUNITY_PARTICIPATION</sourceObjSchema>
+<sourceObjName>ID_COMMUNITY</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>C2988608-A468-8608-FF03-6563EB547D3E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4DC66E6-DAFE-2FDC-39E8-DDA42C854B4D" referredColumn="1CDA7618-B84B-6F81-A900-8CB5D6BCE378"/>
+</associations>
+</Column>
+<Column name="POINTS" id="4834A198-EC8A-DB2A-FE21-989D363936D8">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>T_AMPZ_COMMUNITY_PARTICIPATION</sourceObjSchema>
+<sourceObjName>POINTS</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>301ACFBC-CA15-15D1-EC0B-D2F22DE39557</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F1D5B3E-B764-FD43-F42F-E0657B025F84" schemaObject="E8BC7BD7-7D39-8B37-6F35-43FE2F78375E" name="T_AMPZ_COMMUNITY_PARTICIPATION_PK">
+<sourceConnName>MICHAEL_FIAP</sourceConnName>
+<sourceObjSchema>RM99409</sourceObjSchema>
+<sourceObjName>SYS_C004110370</sourceObjName>
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<importedID>46FEB7F1-2E24-0D11-ABDC-BBE6C7DEF092</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8481D4EF-75D6-4438-4572-41D83F43471D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CD5ED90-7085-66D3-10FB-7D335FA60252" name="FK_PARTICIPATION_COMMUNITYv1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC2F01D2-1B8E-FAE0-18AD-071D1F5E902F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36FAF2F7-C10E-2BE0-8EDA-DC4C6C8C4C82" name="FK_PARTICIPATION_KIDv1">
+<createdBy>Acer</createdBy>
+<createdTime>2024-11-18 23:27:43 UTC</createdTime>
+<ownerDesignName>modelagemAMPZ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2C993D4-96B7-46D3-E1A5-BE9DDD10D120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

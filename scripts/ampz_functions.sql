@@ -54,7 +54,7 @@ CREATE OR REPLACE FUNCTION fn_calcular_media_pontuacao(
     v_media NUMBER;
 BEGIN
     SELECT AVG(vl_points) INTO v_media 
-    FROM t_gxp_score 
+    FROM t_ampz_score 
     WHERE id_kid = p_kid_id;
 
     RETURN NVL(v_media, 0);
@@ -96,14 +96,14 @@ CREATE OR REPLACE FUNCTION fn_calcular_economia_total(
     v_count_device NUMBER;
     ex_device_not_found EXCEPTION;
 BEGIN
-    SELECT COUNT(*) INTO v_count_device FROM t_gxp_device WHERE id_device = p_device_id;
+    SELECT COUNT(*) INTO v_count_device FROM t_ampz_device WHERE id_device = p_device_id;
 
     IF v_count_device = 0 THEN
         RAISE ex_device_not_found;
     END IF;
 
     SELECT SUM(vl_energy_saved) INTO v_economia_total 
-    FROM t_gxp_device 
+    FROM t_ampz_device 
     WHERE id_device = p_device_id;
 
     RETURN NVL(v_economia_total, 0);
@@ -128,7 +128,7 @@ CREATE OR REPLACE FUNCTION fn_verificar_participacao_community(
     v_count NUMBER;
 BEGIN
     SELECT COUNT(*) INTO v_count 
-    FROM t_gxp_community_participation 
+    FROM t_ampz_community_participation 
     WHERE id_kid = p_kid_id AND id_community = p_community_id;
 
     IF v_count > 0 THEN
@@ -149,7 +149,7 @@ CREATE OR REPLACE FUNCTION fn_contar_dispositivos(
     v_total_dispositivos NUMBER;
 BEGIN
     SELECT COUNT(*) INTO v_total_dispositivos 
-    FROM t_gxp_device 
+    FROM t_ampz_device 
     WHERE id_kid = p_kid_id;
 
     RETURN NVL(v_total_dispositivos, 0);
@@ -168,11 +168,11 @@ CREATE OR REPLACE FUNCTION fn_validar_pontuacao_desafio(
     v_pontuacao_necessaria NUMBER;
 BEGIN
     SELECT SUM(vl_points) INTO v_pontuacao 
-    FROM t_gxp_score 
+    FROM t_ampz_score 
     WHERE id_kid = p_kid_id AND id_challenge = p_challenge_id;
 
     SELECT vl_score INTO v_pontuacao_necessaria 
-    FROM t_gxp_challenge_goal 
+    FROM t_ampz_challenge_goal 
     WHERE id_challenge = p_challenge_id;
 
     IF v_pontuacao >= v_pontuacao_necessaria THEN
@@ -196,7 +196,7 @@ CREATE OR REPLACE FUNCTION fn_calcular_total_pontos(
     v_total_pontos NUMBER;
 BEGIN
     SELECT SUM(vl_points) INTO v_total_pontos 
-    FROM t_gxp_score 
+    FROM t_ampz_score 
     WHERE id_kid = p_kid_id;
 
     RETURN NVL(v_total_pontos, 0);
@@ -216,7 +216,7 @@ CREATE OR REPLACE FUNCTION fn_verificar_dispositivo_ativo(
     v_count NUMBER;
 BEGIN
     SELECT COUNT(*) INTO v_count 
-    FROM t_gxp_energy_consumption 
+    FROM t_ampz_energy_consumption 
     WHERE id_device = p_device_id AND dt_consumption >= SYSDATE - 30;
 
     IF v_count > 0 THEN
@@ -237,7 +237,7 @@ CREATE OR REPLACE FUNCTION fn_calcular_tempo_uso(
     v_tempo_uso NUMBER;
 BEGIN
     SELECT SUM(vl_usage_time) INTO v_tempo_uso 
-    FROM t_gxp_device 
+    FROM t_ampz_device 
     WHERE id_device = p_device_id;
 
     RETURN NVL(v_tempo_uso, 0);
@@ -257,7 +257,7 @@ CREATE OR REPLACE FUNCTION fn_validar_existencia_dispositivo(
     v_count NUMBER;
 BEGIN
     SELECT COUNT(*) INTO v_count 
-    FROM t_gxp_device 
+    FROM t_ampz_device 
     WHERE id_device = p_device_id;
 
     IF v_count > 0 THEN

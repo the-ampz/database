@@ -9,18 +9,18 @@
 <actions>INSERT, UPDATE, DELETE</actions>
 <body><![CDATA[BEGIN
     IF INSERTING THEN
-        INSERT INTO t_audit_gxp_community (audit_id, id_community, operation, operation_date, new_name, new_total_points)
-        VALUES (seq_t_audit_gxp_community.NEXTVAL, :NEW.id_community, 'INSERT', SYSTIMESTAMP, :NEW.ds_name, :NEW.total_points);
+        INSERT INTO t_audit_ampz_community (audit_id, id_community, operation, operation_date, new_name, new_total_points)
+        VALUES (seq_t_audit_ampz_community.NEXTVAL, :NEW.id_community, 'INSERT', SYSTIMESTAMP, :NEW.ds_name, :NEW.total_points);
     ELSIF UPDATING THEN
-        INSERT INTO t_audit_gxp_community (audit_id, id_community, operation, operation_date, old_name, old_total_points, new_name, new_total_points)
-        VALUES (seq_t_audit_gxp_community.NEXTVAL, :OLD.id_community, 'UPDATE', SYSTIMESTAMP, :OLD.ds_name, :OLD.total_points, :NEW.ds_name, :NEW.total_points);
+        INSERT INTO t_audit_ampz_community (audit_id, id_community, operation, operation_date, old_name, old_total_points, new_name, new_total_points)
+        VALUES (seq_t_audit_ampz_community.NEXTVAL, :OLD.id_community, 'UPDATE', SYSTIMESTAMP, :OLD.ds_name, :OLD.total_points, :NEW.ds_name, :NEW.total_points);
     ELSIF DELETING THEN
-        INSERT INTO t_audit_gxp_community (audit_id, id_community, operation, operation_date, old_name, old_total_points)
-        VALUES (seq_t_audit_gxp_community.NEXTVAL, :OLD.id_community, 'DELETE', SYSTIMESTAMP, :OLD.ds_name, :OLD.total_points);
+        INSERT INTO t_audit_ampz_community (audit_id, id_community, operation, operation_date, old_name, old_total_points)
+        VALUES (seq_t_audit_ampz_community.NEXTVAL, :OLD.id_community, 'DELETE', SYSTIMESTAMP, :OLD.ds_name, :OLD.total_points);
     END IF;
 END;
 ]]></body>
 <triggerTime>AFTER</triggerTime>
 <owner>626F9BBA-70DD-9A88-476F-4282B5465154</owner>
-<table>4AF39F7A-1691-9311-4A55-FAA76B1FCCA3</table>
+<table>9C9C88FC-EF93-37D1-EEBE-DA4DD9D64A10</table>
 </TriggerOraclev10g>
