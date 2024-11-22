@@ -3,8 +3,11 @@ CREATE OR REPLACE PROCEDURE export_data IS
     v_json_data CLOB;
     v_json_table CLOB;
 BEGIN
+    -- Iniciar o JSON principal
+    v_json_table := '{ "data": [';
+
     -- JSON para a tabela t_ampz_address
-    v_json_table := '{"t_ampz_address": [';
+    v_json_table := v_json_table || '{"t_ampz_address": [';
     FOR rec IN (
         SELECT id_address, ds_street, ds_number, ds_complement, ds_district, ds_city, ds_state
         FROM t_ampz_address
@@ -20,11 +23,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_user
-    v_json_table := '{"t_ampz_user": [';
+    v_json_table := v_json_table || '"t_ampz_user": [';
     FOR rec IN (
         SELECT id_user, ds_name, ds_email, ds_password, id_address, dt_birthdate
         FROM t_ampz_user
@@ -39,11 +41,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_kid
-    v_json_table := '{"t_ampz_kid": [';
+    v_json_table := v_json_table || '"t_ampz_kid": [';
     FOR rec IN (
         SELECT id_kid, id_user, ds_name, dt_birthdate, total_score, total_energy_saved
         FROM t_ampz_kid
@@ -58,11 +59,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_device
-    v_json_table := '{"t_ampz_device": [';
+    v_json_table := v_json_table || '"t_ampz_device": [';
     FOR rec IN (
         SELECT id_device, id_kid, ds_name, ds_type, ds_operating_system, vl_energy_consumption, vl_energy_saved
         FROM t_ampz_device
@@ -78,11 +78,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_community
-    v_json_table := '{"t_ampz_community": [';
+    v_json_table := v_json_table || '"t_ampz_community": [';
     FOR rec IN (
         SELECT id_community, ds_name, ds_description, total_points
         FROM t_ampz_community
@@ -95,11 +94,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_community_participation
-    v_json_table := '{"t_ampz_community_participation": [';
+    v_json_table := v_json_table || '"t_ampz_community_participation": [';
     FOR rec IN (
         SELECT id_participation, id_kid, id_community, points
         FROM t_ampz_community_participation
@@ -112,11 +110,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_challenge_goal
-    v_json_table := '{"t_ampz_challenge_goal": [';
+    v_json_table := v_json_table || '"t_ampz_challenge_goal": [';
     FOR rec IN (
         SELECT id_challenge, ds_description, vl_score, dt_start, dt_end, vl_energy_required, id_community
         FROM t_ampz_challenge_goal
@@ -132,11 +129,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_energy_consumption
-    v_json_table := '{"t_ampz_energy_consumption": [';
+    v_json_table := v_json_table || '"t_ampz_energy_consumption": [';
     FOR rec IN (
         SELECT id_energy_consumption, id_device, ds_consumption_type, vl_consumption, vl_energy_saved, dt_consumption
         FROM t_ampz_energy_consumption
@@ -151,11 +147,10 @@ BEGIN
         );
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
-    v_json_table := RTRIM(v_json_table, ',') || ']}';
-    DBMS_OUTPUT.PUT_LINE(v_json_table);
+    v_json_table := RTRIM(v_json_table, ',') || '],';
 
     -- JSON para a tabela t_ampz_score
-    v_json_table := '{"t_ampz_score": [';
+    v_json_table := v_json_table || '"t_ampz_score": [';
     FOR rec IN (
         SELECT id_score, id_kid, id_challenge, vl_points, dt_completion
         FROM t_ampz_score
@@ -170,9 +165,12 @@ BEGIN
         v_json_table := v_json_table || v_json_data || ',';
     END LOOP;
     v_json_table := RTRIM(v_json_table, ',') || ']}';
+
+    -- Finalizando o JSON
     DBMS_OUTPUT.PUT_LINE(v_json_table);
 END export_data;
 /
+
 
 SET SERVEROUTPUT ON SIZE UNLIMITED;
 SET FEEDBACK OFF;
@@ -188,4 +186,3 @@ SPOOL OFF;
 
 SET FEEDBACK ON;
 SET TERMOUT ON;
-

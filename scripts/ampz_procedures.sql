@@ -1,4 +1,3 @@
-
 -- DROPs para remover as procedures:
 -- DROP PROCEDURE insert_score;
 -- DROP PROCEDURE insert_energy_consumption;
