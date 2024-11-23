@@ -1,46 +1,46 @@
----- DROP TABLES PRINCIPAIS
---DROP TABLE t_ampz_score CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_energy_consumption CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_challenge_goal CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_community_participation CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_community CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_device CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_kid CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_user CASCADE CONSTRAINTS;
---DROP TABLE t_ampz_address CASCADE CONSTRAINTS;
---
----- DROP TABLES DE AUDITORIA
---DROP TABLE t_audit_ampz_address;
---DROP TABLE t_audit_ampz_user;
---DROP TABLE t_audit_ampz_kid;
---DROP TABLE t_audit_ampz_device;
---DROP TABLE t_audit_ampz_community;
---DROP TABLE t_audit_ampz_community_participation;
---DROP TABLE t_audit_ampz_challenge_goal;
---DROP TABLE t_audit_ampz_energy_consumption;
---DROP TABLE t_audit_ampz_score;
---
----- DROP SEQUENCES PRINCIPAIS
---DROP SEQUENCE seq_t_ampz_score;
---DROP SEQUENCE seq_t_ampz_energy_consumption;
---DROP SEQUENCE seq_t_ampz_challenge_goal;
---DROP SEQUENCE seq_t_ampz_community_participation;
---DROP SEQUENCE seq_t_ampz_community;
---DROP SEQUENCE seq_t_ampz_device;
---DROP SEQUENCE seq_t_ampz_kid;
---DROP SEQUENCE seq_t_ampz_user;
---DROP SEQUENCE seq_t_ampz_address;
---
----- DROP SEQUENCES DE AUDITORIA
---DROP SEQUENCE seq_t_audit_ampz_address;
---DROP SEQUENCE seq_t_audit_ampz_user;
---DROP SEQUENCE seq_t_audit_ampz_kid;
---DROP SEQUENCE seq_t_audit_ampz_device;
---DROP SEQUENCE seq_t_audit_ampz_community;
---DROP SEQUENCE seq_t_audit_ampz_community_participation;
---DROP SEQUENCE seq_t_audit_ampz_challenge_goal;
---DROP SEQUENCE seq_t_audit_ampz_energy_consumption;
---DROP SEQUENCE seq_t_audit_ampz_score;
+-- DROP TABLES PRINCIPAIS
+DROP TABLE t_ampz_score CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_energy_consumption CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_challenge_goal CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_community_participation CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_community CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_device CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_kid CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_user CASCADE CONSTRAINTS;
+DROP TABLE t_ampz_address CASCADE CONSTRAINTS;
+
+-- DROP TABLES DE AUDITORIA
+DROP TABLE t_audit_ampz_address;
+DROP TABLE t_audit_ampz_user;
+DROP TABLE t_audit_ampz_kid;
+DROP TABLE t_audit_ampz_device;
+DROP TABLE t_audit_ampz_community;
+DROP TABLE t_audit_ampz_community_participation;
+DROP TABLE t_audit_ampz_challenge_goal;
+DROP TABLE t_audit_ampz_energy_consumption;
+DROP TABLE t_audit_ampz_score;
+
+-- DROP SEQUENCES PRINCIPAIS
+DROP SEQUENCE seq_t_ampz_score;
+DROP SEQUENCE seq_t_ampz_energy_consumption;
+DROP SEQUENCE seq_t_ampz_challenge_goal;
+DROP SEQUENCE seq_t_ampz_community_participation;
+DROP SEQUENCE seq_t_ampz_community;
+DROP SEQUENCE seq_t_ampz_device;
+DROP SEQUENCE seq_t_ampz_kid;
+DROP SEQUENCE seq_t_ampz_user;
+DROP SEQUENCE seq_t_ampz_address;
+
+-- DROP SEQUENCES DE AUDITORIA
+DROP SEQUENCE seq_t_audit_ampz_address;
+DROP SEQUENCE seq_t_audit_ampz_user;
+DROP SEQUENCE seq_t_audit_ampz_kid;
+DROP SEQUENCE seq_t_audit_ampz_device;
+DROP SEQUENCE seq_t_audit_ampz_community;
+DROP SEQUENCE seq_t_audit_ampz_community_participation;
+DROP SEQUENCE seq_t_audit_ampz_challenge_goal;
+DROP SEQUENCE seq_t_audit_ampz_energy_consumption;
+DROP SEQUENCE seq_t_audit_ampz_score;
 
 -- TABELAS PRINCIPAIS
 CREATE TABLE t_ampz_address (
